@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		751F580C282FBC4900FBD04D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F580B282FBC4900FBD04D /* AppDelegate.swift */; };
 		751F580E282FBC4900FBD04D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F580D282FBC4900FBD04D /* SceneDelegate.swift */; };
-		751F5810282FBC4900FBD04D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F580F282FBC4900FBD04D /* ViewController.swift */; };
 		751F5813282FBC4900FBD04D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751F5811282FBC4900FBD04D /* Main.storyboard */; };
 		751F5815282FBC4A00FBD04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751F5814282FBC4A00FBD04D /* Assets.xcassets */; };
 		751F5818282FBC4A00FBD04D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751F5816282FBC4A00FBD04D /* LaunchScreen.storyboard */; };
+		75284B6D282FCF2700D7DFC5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B6C282FCF2700D7DFC5 /* HomeViewController.swift */; };
+		75284B6F282FCF4100D7DFC5 /* HipiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B6E282FCF4100D7DFC5 /* HipiViewController.swift */; };
+		75284B71282FCF5100D7DFC5 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B70282FCF5100D7DFC5 /* UpcomingViewController.swift */; };
+		75284B73282FCF6300D7DFC5 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B72282FCF6300D7DFC5 /* MoreViewController.swift */; };
+		75284B75282FCFC700D7DFC5 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B74282FCFC700D7DFC5 /* TabViewController.swift */; };
+		75284B77282FD0C300D7DFC5 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		751F5808282FBC4800FBD04D /* zee5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zee5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		751F580B282FBC4900FBD04D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		751F580D282FBC4900FBD04D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		751F580F282FBC4900FBD04D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		751F5812282FBC4900FBD04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		751F5814282FBC4A00FBD04D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		751F5817282FBC4A00FBD04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		751F5819282FBC4A00FBD04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75284B6C282FCF2700D7DFC5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		75284B6E282FCF4100D7DFC5 /* HipiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipiViewController.swift; sourceTree = "<group>"; };
+		75284B70282FCF5100D7DFC5 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		75284B72282FCF6300D7DFC5 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		75284B74282FCFC700D7DFC5 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DownloadViewController.swift; path = zee5/View/DownloadViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,50 @@
 			children = (
 				751F580B282FBC4900FBD04D /* AppDelegate.swift */,
 				751F580D282FBC4900FBD04D /* SceneDelegate.swift */,
-				751F580F282FBC4900FBD04D /* ViewController.swift */,
+				751F5822282FC9A800FBD04D /* Resouces */,
+				751F5821282FC97200FBD04D /* View Model */,
+				751F5820282FC96500FBD04D /* Model */,
+				751F581F282FC95300FBD04D /* View */,
+			);
+			path = zee5;
+			sourceTree = "<group>";
+		};
+		751F581F282FC95300FBD04D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */,
+				75284B74282FCFC700D7DFC5 /* TabViewController.swift */,
+				75284B6C282FCF2700D7DFC5 /* HomeViewController.swift */,
+				75284B6E282FCF4100D7DFC5 /* HipiViewController.swift */,
+				75284B70282FCF5100D7DFC5 /* UpcomingViewController.swift */,
+				75284B72282FCF6300D7DFC5 /* MoreViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		751F5820282FC96500FBD04D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		751F5821282FC97200FBD04D /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		751F5822282FC9A800FBD04D /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
 				751F5811282FBC4900FBD04D /* Main.storyboard */,
 				751F5814282FBC4A00FBD04D /* Assets.xcassets */,
 				751F5816282FBC4A00FBD04D /* LaunchScreen.storyboard */,
 				751F5819282FBC4A00FBD04D /* Info.plist */,
 			);
-			path = zee5;
+			path = Resouces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				751F5810282FBC4900FBD04D /* ViewController.swift in Sources */,
+				75284B75282FCFC700D7DFC5 /* TabViewController.swift in Sources */,
+				75284B73282FCF6300D7DFC5 /* MoreViewController.swift in Sources */,
+				75284B71282FCF5100D7DFC5 /* UpcomingViewController.swift in Sources */,
+				75284B6F282FCF4100D7DFC5 /* HipiViewController.swift in Sources */,
 				751F580C282FBC4900FBD04D /* AppDelegate.swift in Sources */,
 				751F580E282FBC4900FBD04D /* SceneDelegate.swift in Sources */,
+				75284B77282FD0C300D7DFC5 /* DownloadViewController.swift in Sources */,
+				75284B6D282FCF2700D7DFC5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = zee5/Info.plist;
+				INFOPLIST_FILE = /Users/sasidharreddy/Documents/GitHub/ZEE5/zee5/Resouces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = zee5/Info.plist;
+				INFOPLIST_FILE = /Users/sasidharreddy/Documents/GitHub/ZEE5/zee5/Resouces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
