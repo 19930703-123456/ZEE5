@@ -17,9 +17,15 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func buttonClicked(_ sender: Any) {
-        var _ : UIStoryboard
-        let vc = storyboard?.instantiateViewController(withIdentifier: "MoreViewController") as? MoreViewController
-        self.navigationController?.pushViewController(vc!, animated: true)
+//        option binding through gaurd let
+//        guard let vc = storyboard?.instantiateViewController(withIdentifier: "MoreViewController") as? MoreViewController else {
+//            return
+//        }
+        
+       if let vc = storyboard?.instantiateViewController(withIdentifier: "MoreViewController") as? MoreViewController {
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     /*

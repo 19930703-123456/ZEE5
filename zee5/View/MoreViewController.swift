@@ -11,7 +11,7 @@ class MoreViewController: UIViewController {
     
     @IBOutlet weak var navigationBar: UINavigationItem!
    
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var emailTextField: UnderlinedTextField!
   
     @IBOutlet weak var loginStackView: UIStackView!
     
@@ -22,60 +22,83 @@ class MoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let email = emailTextField.text
-       
-        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-        navigationController?.navigationBar.titleTextAttributes = textAttributes
-        if  email == nil {
-            loginButton.isHidden = true
-            loginStackView.isHidden = false
-        }else {
-            loginButton.isHidden = false
-            loginStackView.isHidden = true
-        }
+        loginButton.isHidden = true
+        loginStackView.isHidden = false
+        
+        emailTextField.setUnderlineColor(color: .white)
+        emailTextField.attributedPlaceholder = NSAttributedString(
+            string: "Placeholder Text",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
+        )
+        
+        
+        
+//
+//        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+//        navigationController?.navigationBar.titleTextAttributes = textAttributes
        
        
     }
      
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-      
-//        loginButton.isHidden = true
-        loginStackView.isHidden = false
-    }
-   
 
+    @IBAction func emailTF(_ sender: Any) {
+        if let email = emailTextField.text {
+            
+            if let _ = invalidEmail(email) {
+                loginStackView.isHidden = false
+                loginButton.isHidden = true
+            } else {
+                loginButton.isHidden = false
+                loginStackView.isHidden = true
+            }
+            
+        }
+        
+//        checkForValidForm()
+    }
+    
     @IBAction func loginButtonClick(_ sender: Any) {
         
         loginStackView.isHidden = false
 
-        if let email = emailTextField.text, emailTextField.text?.count != 0 {
-            loginButton.isHidden = true
-            loginStackView.isHidden = false
-        } else {
-            loginButton.isHidden = false
-            loginStackView.isHidden = true
-          
-            return
-            
+                    if let email = emailTextField.text {
+            if email.isEmpty{
+                loginButton.isHidden = true
+                loginStackView.isHidden = false
+                return
+            } else {
+                loginButton.isHidden = false
+                loginStackView.isHidden = true
+            }
         }
-        
-        if isValidEmail(emailID: emailTextField.text ?? "") == false {
-            loginButton.isHidden = false
-            loginStackView.isHidden = false
-            print("invaild")
-        } else {
-            loginStackView.isHidden = true
-            print("valid")}
+            
+            
+            
+//        if isValidEmail(emailID: emailTextField.text ?? "") == false {
+//            loginButton.isHidden = false
+//            loginStackView.isHidden = false
+//            print("invaild")
+//        } else {
+//            loginStackView.isHidden = true
+//            print("valid")
+//
+//        }
        
     }
     
-    func isValidEmail(emailID:String) -> Bool {
-       let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-       let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-       return emailTest.evaluate(with: emailID)
-   }
+    func invalidEmail(_ value: String) -> String?
+    {
+        let reqularExpression = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let predicate = NSPredicate(format: "SELF MATCHES %@", reqularExpression)
+        if !predicate.evaluate(with: value)
+        {
+            return "Invalid Email Address"
+        }
+        
+        return nil
+    }
+    
     /*
     // MARK: - Navigation
 

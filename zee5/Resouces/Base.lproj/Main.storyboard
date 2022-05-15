@@ -155,7 +155,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ID or Mobile Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sTG-gc-ciE">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ID or Mobile Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sTG-gc-ciE" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
                                 <rect key="frame" x="20" y="147" width="374" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="tintColor"/>
@@ -165,17 +165,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="emailTF:" destination="ZSL-0F-NHe" eventType="editingChanged" id="xQf-mw-vOQ"/>
+                                </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfE-us-ppy">
-                                <rect key="frame" x="20" y="197" width="374" height="2"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="TD8-qU-cwS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or continue with:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyx-wY-8t0">
                                 <rect key="frame" x="142" y="273" width="130" height="20.5"/>
                                 <constraints>
@@ -286,12 +279,10 @@
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <color key="tintColor" red="0.72941176470000002" green="0.74117647060000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="bfE-us-ppy" firstAttribute="leading" secondItem="5Yl-pH-GJF" secondAttribute="leading" constant="20" id="EM8-Qx-OZ4"/>
                             <constraint firstItem="knB-5j-K8f" firstAttribute="centerX" secondItem="5Yl-pH-GJF" secondAttribute="centerX" id="GbQ-Rr-ABP"/>
                             <constraint firstItem="sTG-gc-ciE" firstAttribute="top" secondItem="5Yl-pH-GJF" secondAttribute="top" constant="59" id="JUu-r8-sga"/>
                             <constraint firstAttribute="bottom" secondItem="0ux-pA-hW5" secondAttribute="bottom" constant="100" id="Jvw-I9-d7o"/>
                             <constraint firstItem="sTG-gc-ciE" firstAttribute="leading" secondItem="5Yl-pH-GJF" secondAttribute="leading" constant="20" id="K41-KJ-dee"/>
-                            <constraint firstItem="bfE-us-ppy" firstAttribute="top" secondItem="sTG-gc-ciE" secondAttribute="bottom" id="N1E-IZ-aAA"/>
                             <constraint firstItem="5Yl-pH-GJF" firstAttribute="trailing" secondItem="0ux-pA-hW5" secondAttribute="trailing" constant="20" id="Nbx-3K-yIY"/>
                             <constraint firstItem="kyx-wY-8t0" firstAttribute="centerX" secondItem="5Yl-pH-GJF" secondAttribute="centerX" id="OVG-gD-jpt"/>
                             <constraint firstItem="Uol-oG-5Ym" firstAttribute="centerX" secondItem="5Yl-pH-GJF" secondAttribute="centerX" id="TQb-Jw-MNp"/>
@@ -299,7 +290,6 @@
                             <constraint firstItem="Uol-oG-5Ym" firstAttribute="top" secondItem="kyx-wY-8t0" secondAttribute="bottom" constant="20" id="b0h-A0-eg0"/>
                             <constraint firstItem="0ux-pA-hW5" firstAttribute="leading" secondItem="5Yl-pH-GJF" secondAttribute="leading" constant="20" id="omS-Mx-MFV"/>
                             <constraint firstItem="knB-5j-K8f" firstAttribute="top" secondItem="Uol-oG-5Ym" secondAttribute="bottom" constant="50" id="pGv-Bc-3uX"/>
-                            <constraint firstItem="5Yl-pH-GJF" firstAttribute="trailing" secondItem="bfE-us-ppy" secondAttribute="trailing" constant="20" id="tel-JN-bmk"/>
                             <constraint firstItem="5Yl-pH-GJF" firstAttribute="trailing" secondItem="sTG-gc-ciE" secondAttribute="trailing" constant="20" id="uL4-I2-uZN"/>
                         </constraints>
                     </view>
@@ -313,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRg-k2-TpW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241" y="1630"/>
+            <point key="canvasLocation" x="128" y="1630"/>
         </scene>
         <!--Download View Controller-->
         <scene sceneID="7Zl-HG-Vls">
@@ -380,9 +370,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -18,6 +18,7 @@
 		75284B73282FCF6300D7DFC5 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B72282FCF6300D7DFC5 /* MoreViewController.swift */; };
 		75284B75282FCFC700D7DFC5 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B74282FCFC700D7DFC5 /* TabViewController.swift */; };
 		75284B77282FD0C300D7DFC5 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */; };
+		75284B7A2830E77800D7DFC5 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B792830E77800D7DFC5 /* UnderlinedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		75284B72282FCF6300D7DFC5 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		75284B74282FCFC700D7DFC5 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DownloadViewController.swift; path = zee5/View/DownloadViewController.swift; sourceTree = SOURCE_ROOT; };
+		75284B792830E77800D7DFC5 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				751F580B282FBC4900FBD04D /* AppDelegate.swift */,
 				751F580D282FBC4900FBD04D /* SceneDelegate.swift */,
+				75284B782830E72E00D7DFC5 /* Extension */,
 				751F5822282FC9A800FBD04D /* Resouces */,
 				751F5821282FC97200FBD04D /* View Model */,
 				751F5820282FC96500FBD04D /* Model */,
@@ -112,6 +115,14 @@
 				751F5819282FBC4A00FBD04D /* Info.plist */,
 			);
 			path = Resouces;
+			sourceTree = "<group>";
+		};
+		75284B782830E72E00D7DFC5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				75284B792830E77800D7DFC5 /* UnderlinedTextField.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				75284B73282FCF6300D7DFC5 /* MoreViewController.swift in Sources */,
 				75284B71282FCF5100D7DFC5 /* UpcomingViewController.swift in Sources */,
 				75284B6F282FCF4100D7DFC5 /* HipiViewController.swift in Sources */,
+				75284B7A2830E77800D7DFC5 /* UnderlinedTextField.swift in Sources */,
 				751F580C282FBC4900FBD04D /* AppDelegate.swift in Sources */,
 				751F580E282FBC4900FBD04D /* SceneDelegate.swift in Sources */,
 				75284B77282FD0C300D7DFC5 /* DownloadViewController.swift in Sources */,
