@@ -19,6 +19,7 @@
 		75284B75282FCFC700D7DFC5 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B74282FCFC700D7DFC5 /* TabViewController.swift */; };
 		75284B77282FD0C300D7DFC5 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */; };
 		75284B7A2830E77800D7DFC5 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B792830E77800D7DFC5 /* UnderlinedTextField.swift */; };
+		75284B7C283107F400D7DFC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B7B283107F400D7DFC5 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		75284B74282FCFC700D7DFC5 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DownloadViewController.swift; path = zee5/View/DownloadViewController.swift; sourceTree = SOURCE_ROOT; };
 		75284B792830E77800D7DFC5 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		75284B7B283107F400D7DFC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				75284B6E282FCF4100D7DFC5 /* HipiViewController.swift */,
 				75284B70282FCF5100D7DFC5 /* UpcomingViewController.swift */,
 				75284B72282FCF6300D7DFC5 /* MoreViewController.swift */,
+				75284B7B283107F400D7DFC5 /* LoginViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				751F580C282FBC4900FBD04D /* AppDelegate.swift in Sources */,
 				751F580E282FBC4900FBD04D /* SceneDelegate.swift in Sources */,
 				75284B77282FD0C300D7DFC5 /* DownloadViewController.swift in Sources */,
+				75284B7C283107F400D7DFC5 /* LoginViewController.swift in Sources */,
 				75284B6D282FCF2700D7DFC5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

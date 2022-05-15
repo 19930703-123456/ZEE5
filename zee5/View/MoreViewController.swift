@@ -10,14 +10,14 @@ import UIKit
 class MoreViewController: UIViewController {
     
     @IBOutlet weak var navigationBar: UINavigationItem!
-   
+    
     @IBOutlet weak var emailTextField: UnderlinedTextField!
-  
+    
     @IBOutlet weak var loginStackView: UIStackView!
     
     @IBOutlet weak var loginButton: UIButton!
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,19 +33,20 @@ class MoreViewController: UIViewController {
         
         
         
-//
-//        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-//        navigationController?.navigationBar.titleTextAttributes = textAttributes
-       
-       
+        //
+        //        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        //        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        
+        
     }
-     
     
-
+    
+    
     @IBAction func emailTF(_ sender: Any) {
+        
         if let email = emailTextField.text {
             
-            if let _ = invalidEmail(email) {
+            if invalidEmail(email) != nil{
                 loginStackView.isHidden = false
                 loginButton.isHidden = true
             } else {
@@ -54,15 +55,28 @@ class MoreViewController: UIViewController {
             }
             
         }
+        func invalidEmail(_ value: String) -> String?
+        {
+            let reqularExpression = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+            let predicate = NSPredicate(format: "SELF MATCHES %@", reqularExpression)
+            if !predicate.evaluate(with: value)
+            {
+                return "Invalid Email Address"
+            }
+            
+            return nil
+        }
         
-//        checkForValidForm()
+        //        checkForValidForm()
     }
     
     @IBAction func loginButtonClick(_ sender: Any) {
         
+        
+        
         loginStackView.isHidden = false
-
-                    if let email = emailTextField.text {
+        
+        if let email = emailTextField.text {
             if email.isEmpty{
                 loginButton.isHidden = true
                 loginStackView.isHidden = false
@@ -70,43 +84,40 @@ class MoreViewController: UIViewController {
             } else {
                 loginButton.isHidden = false
                 loginStackView.isHidden = true
+                
+               if let vc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+                    vc.hidesBottomBarWhenPushed = true
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+                
             }
-        }
             
             
             
-//        if isValidEmail(emailID: emailTextField.text ?? "") == false {
-//            loginButton.isHidden = false
-//            loginStackView.isHidden = false
-//            print("invaild")
-//        } else {
-//            loginStackView.isHidden = true
-//            print("valid")
-//
-//        }
-       
-    }
-    
-    func invalidEmail(_ value: String) -> String?
-    {
-        let reqularExpression = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", reqularExpression)
-        if !predicate.evaluate(with: value)
-        {
-            return "Invalid Email Address"
+            //        if isValidEmail(emailID: emailTextField.text ?? "") == false {
+            //            loginButton.isHidden = false
+            //            loginStackView.isHidden = false
+            //            print("invaild")
+            //        } else {
+            //            loginStackView.isHidden = true
+            //            print("valid")
+            //
+            //        }
+            
         }
         
-        return nil
+       
+        
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
+        
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

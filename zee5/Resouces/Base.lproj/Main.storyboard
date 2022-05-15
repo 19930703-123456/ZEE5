@@ -303,7 +303,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRg-k2-TpW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128" y="1630"/>
+            <point key="canvasLocation" x="241" y="1630"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="kQf-vS-mtk">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="xT8-84-lPe" customClass="LoginViewController" customModule="zee5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zql-VE-vna">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zGU-7e-2aV">
+                                <rect key="frame" x="20" y="144" width="374" height="108"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iN6-0U-iDD" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="2CY-7Z-4o8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z0V-0g-BFD" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="374" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="WBN-UD-7gx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Z0V-0g-BFD" firstAttribute="height" secondItem="iN6-0U-iDD" secondAttribute="height" id="Zsh-gd-4uL"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmh-9z-YVw">
+                                <rect key="frame" x="258" y="272" width="136" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="forgot password?"/>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="xT8-84-lPe" eventType="touchUpInside" id="OYY-Aq-T34"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baE-n4-nS5">
+                                <rect key="frame" x="20" y="322" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vkS-h6-uSf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <action selector="loginbutton:" destination="xT8-84-lPe" eventType="touchUpInside" id="lwt-Ez-koQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wx4-Cc-mNZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="baE-n4-nS5" firstAttribute="centerX" secondItem="Wx4-Cc-mNZ" secondAttribute="centerX" id="Fxt-dU-J33"/>
+                            <constraint firstItem="xmh-9z-YVw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wx4-Cc-mNZ" secondAttribute="leading" symbolic="YES" id="MjU-Z3-9av"/>
+                            <constraint firstItem="baE-n4-nS5" firstAttribute="leading" secondItem="Wx4-Cc-mNZ" secondAttribute="leading" constant="20" id="Pxg-bT-dnd"/>
+                            <constraint firstItem="zGU-7e-2aV" firstAttribute="top" secondItem="Wx4-Cc-mNZ" secondAttribute="top" constant="100" id="Uef-4C-ZuR"/>
+                            <constraint firstItem="xmh-9z-YVw" firstAttribute="top" secondItem="zGU-7e-2aV" secondAttribute="bottom" constant="20" id="VKN-cu-FGb"/>
+                            <constraint firstItem="Wx4-Cc-mNZ" firstAttribute="trailing" secondItem="zGU-7e-2aV" secondAttribute="trailing" constant="20" id="W5R-c7-i7A"/>
+                            <constraint firstItem="Wx4-Cc-mNZ" firstAttribute="trailing" secondItem="xmh-9z-YVw" secondAttribute="trailing" constant="20" id="eMR-nV-xH2"/>
+                            <constraint firstItem="zGU-7e-2aV" firstAttribute="leading" secondItem="Wx4-Cc-mNZ" secondAttribute="leading" constant="20" id="f2H-F9-ufO"/>
+                            <constraint firstItem="baE-n4-nS5" firstAttribute="top" secondItem="zGU-7e-2aV" secondAttribute="bottom" constant="70" id="ryk-Sp-l0y"/>
+                            <constraint firstItem="Wx4-Cc-mNZ" firstAttribute="trailing" secondItem="baE-n4-nS5" secondAttribute="trailing" constant="20" id="yFm-gS-WDf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Z0V-0g-BFD" id="hDD-t8-ssY"/>
+                        <outlet property="userNameTextField" destination="iN6-0U-iDD" id="5cU-L7-SGj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ouE-Hm-T5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="1630"/>
         </scene>
         <!--Download View Controller-->
         <scene sceneID="7Zl-HG-Vls">
