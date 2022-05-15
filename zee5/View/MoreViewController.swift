@@ -26,7 +26,13 @@ class MoreViewController: UIViewController {
        
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
-       
+        if  email == nil {
+            loginButton.isHidden = true
+            loginStackView.isHidden = false
+        }else {
+            loginButton.isHidden = false
+            loginStackView.isHidden = true
+        }
        
        
     }
@@ -42,10 +48,12 @@ class MoreViewController: UIViewController {
 
     @IBAction func loginButtonClick(_ sender: Any) {
         
-       
         loginStackView.isHidden = false
 
-        guard let email = emailTextField.text, emailTextField.text?.count != 0  else {
+        if let email = emailTextField.text, emailTextField.text?.count != 0 {
+            loginButton.isHidden = true
+            loginStackView.isHidden = false
+        } else {
             loginButton.isHidden = false
             loginStackView.isHidden = true
           
