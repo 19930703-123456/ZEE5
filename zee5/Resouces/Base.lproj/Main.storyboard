@@ -381,6 +381,125 @@
             </objects>
             <point key="canvasLocation" x="975" y="1630"/>
         </scene>
+        <!--Register View Controller-->
+        <scene sceneID="Kvu-Ab-eD8">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="Da8-Ch-7le" customClass="RegisterViewController" customModule="zee5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TLl-Ny-B95">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email ID or Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jb7-73-vY7" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
+                                <rect key="frame" x="20" y="144" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4oV-O2-7ZM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Qq-zv-D99">
+                                <rect key="frame" x="20" y="208" width="374" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebh-lo-L6n" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="7eb-6b-MJk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkp-Vn-SCe" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rkp-Vn-SCe" firstAttribute="width" secondItem="ebh-lo-L6n" secondAttribute="width" id="bI6-K3-HoH"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a4c-K2-NR7">
+                                <rect key="frame" x="20" y="272" width="374" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HD3-l6-NN6" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="lFK-fB-BE9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="as4-Cq-X8l" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="as4-Cq-X8l" firstAttribute="width" secondItem="HD3-l6-NN6" secondAttribute="width" id="ayP-Xd-YSO"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Set Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2FV-H8-USU" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
+                                <rect key="frame" x="20" y="336" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9Ou-jd-cse"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By proceeding you agree to our Terms of Use and Privacy Policy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnB-H7-nzn">
+                                <rect key="frame" x="20" y="430" width="374" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOl-Bm-3PS">
+                                <rect key="frame" x="168.5" y="494.5" width="77.5" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="A9e-nF-7gC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                                <connections>
+                                    <action selector="registerButton:" destination="Da8-Ch-7le" eventType="touchUpInside" id="lTf-TI-CU2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SGJ-wL-3iP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vnB-H7-nzn" firstAttribute="leading" secondItem="SGJ-wL-3iP" secondAttribute="leading" constant="20" id="1Gj-Rm-Yti"/>
+                            <constraint firstItem="a4c-K2-NR7" firstAttribute="leading" secondItem="SGJ-wL-3iP" secondAttribute="leading" constant="20" id="6mD-BE-4dd"/>
+                            <constraint firstItem="vnB-H7-nzn" firstAttribute="top" secondItem="2FV-H8-USU" secondAttribute="bottom" constant="50" id="BYg-wx-1C9"/>
+                            <constraint firstItem="Jb7-73-vY7" firstAttribute="top" secondItem="SGJ-wL-3iP" secondAttribute="top" constant="100" id="BeH-z0-09b"/>
+                            <constraint firstItem="vOl-Bm-3PS" firstAttribute="top" secondItem="vnB-H7-nzn" secondAttribute="bottom" constant="50" id="DTv-Jk-ubW"/>
+                            <constraint firstItem="2FV-H8-USU" firstAttribute="top" secondItem="a4c-K2-NR7" secondAttribute="bottom" constant="20" id="DsP-yB-JGd"/>
+                            <constraint firstItem="SGJ-wL-3iP" firstAttribute="trailing" secondItem="a4c-K2-NR7" secondAttribute="trailing" constant="20" id="W91-81-TEe"/>
+                            <constraint firstItem="a4c-K2-NR7" firstAttribute="top" secondItem="5Qq-zv-D99" secondAttribute="bottom" constant="20" id="YHk-el-2Tf"/>
+                            <constraint firstItem="Jb7-73-vY7" firstAttribute="leading" secondItem="SGJ-wL-3iP" secondAttribute="leading" constant="20" id="YNo-1a-2JS"/>
+                            <constraint firstItem="5Qq-zv-D99" firstAttribute="top" secondItem="Jb7-73-vY7" secondAttribute="bottom" constant="20" id="Z6Y-s2-Xwy"/>
+                            <constraint firstItem="vOl-Bm-3PS" firstAttribute="centerX" secondItem="vnB-H7-nzn" secondAttribute="centerX" id="dkp-pv-ptI"/>
+                            <constraint firstItem="5Qq-zv-D99" firstAttribute="leading" secondItem="SGJ-wL-3iP" secondAttribute="leading" constant="20" id="fr1-zu-pRh"/>
+                            <constraint firstItem="SGJ-wL-3iP" firstAttribute="trailing" secondItem="vnB-H7-nzn" secondAttribute="trailing" constant="20" id="l01-ho-ZSO"/>
+                            <constraint firstItem="SGJ-wL-3iP" firstAttribute="trailing" secondItem="Jb7-73-vY7" secondAttribute="trailing" constant="20" id="lSx-Ed-vqI"/>
+                            <constraint firstItem="2FV-H8-USU" firstAttribute="leading" secondItem="SGJ-wL-3iP" secondAttribute="leading" constant="20" id="nHs-iI-g8e"/>
+                            <constraint firstItem="SGJ-wL-3iP" firstAttribute="trailing" secondItem="5Qq-zv-D99" secondAttribute="trailing" constant="20" id="o9c-nj-jBS"/>
+                            <constraint firstItem="SGJ-wL-3iP" firstAttribute="trailing" secondItem="2FV-H8-USU" secondAttribute="trailing" constant="20" id="zHh-gP-Pzt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dobTextField" destination="HD3-l6-NN6" id="2P7-RJ-B5B"/>
+                        <outlet property="emailIDTextField" destination="Jb7-73-vY7" id="5al-cM-jS4"/>
+                        <outlet property="firstNameTextField" destination="ebh-lo-L6n" id="tVK-Eh-YtP"/>
+                        <outlet property="genderTextField" destination="as4-Cq-X8l" id="Bux-lv-trY"/>
+                        <outlet property="lastNameTextField" destination="rkp-Vn-SCe" id="bWj-Zf-CGW"/>
+                        <outlet property="setPasswordTextField" destination="2FV-H8-USU" id="Xpg-YW-cU0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8o-YJ-8tS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607" y="1630"/>
+        </scene>
         <!--Download View Controller-->
         <scene sceneID="7Zl-HG-Vls">
             <objects>

@@ -75,7 +75,6 @@ class MoreViewController: UIViewController {
         
         
         loginStackView.isHidden = false
-        
         if let email = emailTextField.text {
             if email.isEmpty{
                 loginButton.isHidden = true
@@ -85,7 +84,7 @@ class MoreViewController: UIViewController {
                 loginButton.isHidden = false
                 loginStackView.isHidden = true
                 
-               if let vc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
                     vc.hidesBottomBarWhenPushed = true
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
@@ -106,7 +105,7 @@ class MoreViewController: UIViewController {
             
         }
         
-       
+        
         
         /*
          // MARK: - Navigation

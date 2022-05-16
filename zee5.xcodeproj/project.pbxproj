@@ -20,6 +20,7 @@
 		75284B77282FD0C300D7DFC5 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */; };
 		75284B7A2830E77800D7DFC5 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B792830E77800D7DFC5 /* UnderlinedTextField.swift */; };
 		75284B7C283107F400D7DFC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B7B283107F400D7DFC5 /* LoginViewController.swift */; };
+		75284B7E2831507E00D7DFC5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B7D2831507D00D7DFC5 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DownloadViewController.swift; path = zee5/View/DownloadViewController.swift; sourceTree = SOURCE_ROOT; };
 		75284B792830E77800D7DFC5 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		75284B7B283107F400D7DFC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		75284B7D2831507D00D7DFC5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		751F581F282FC95300FBD04D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				75284B7D2831507D00D7DFC5 /* RegisterViewController.swift */,
 				75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */,
 				75284B74282FCFC700D7DFC5 /* TabViewController.swift */,
 				75284B6C282FCF2700D7DFC5 /* HomeViewController.swift */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75284B75282FCFC700D7DFC5 /* TabViewController.swift in Sources */,
+				75284B7E2831507E00D7DFC5 /* RegisterViewController.swift in Sources */,
 				75284B73282FCF6300D7DFC5 /* MoreViewController.swift in Sources */,
 				75284B71282FCF5100D7DFC5 /* UpcomingViewController.swift in Sources */,
 				75284B6F282FCF4100D7DFC5 /* HipiViewController.swift in Sources */,
