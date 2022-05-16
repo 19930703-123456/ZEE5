@@ -21,16 +21,17 @@ class MoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.text = "g@g.co"
         
-        loginButton.isHidden = true
-        loginStackView.isHidden = false
+        loginButton.isHidden = false
+        loginStackView.isHidden = true
         
         emailTextField.setUnderlineColor(color: .white)
         emailTextField.attributedPlaceholder = NSAttributedString(
             string: "Placeholder Text",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
-        
+        goToNextScreen()
         
         
         //
@@ -71,8 +72,10 @@ class MoreViewController: UIViewController {
     }
     
     @IBAction func loginButtonClick(_ sender: Any) {
+        goToNextScreen()
         
-        
+    }
+    func goToNextScreen() {
         
         loginStackView.isHidden = false
         if let email = emailTextField.text {
@@ -91,32 +94,8 @@ class MoreViewController: UIViewController {
                 
             }
             
-            
-            
-            //        if isValidEmail(emailID: emailTextField.text ?? "") == false {
-            //            loginButton.isHidden = false
-            //            loginStackView.isHidden = false
-            //            print("invaild")
-            //        } else {
-            //            loginStackView.isHidden = true
-            //            print("valid")
-            //
-            //        }
-            
         }
         
-        
-        
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
-        
-        
     }
+        
 }

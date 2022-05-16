@@ -11,7 +11,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+goToNextScreen()
         // Do any additional setup after loading the view.
     }
     
@@ -21,13 +21,15 @@ class HomeViewController: UIViewController {
 //        guard let vc = storyboard?.instantiateViewController(withIdentifier: "MoreViewController") as? MoreViewController else {
 //            return
 //        }
-        
-       if let vc = storyboard?.instantiateViewController(withIdentifier: "MoreViewController") as? MoreViewController {
-            vc.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        goToNextScreen()
+       
     }
-    
+    func goToNextScreen() {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "MoreViewController") as? MoreViewController {
+             vc.hidesBottomBarWhenPushed = true
+             self.navigationController?.pushViewController(vc, animated: true)
+         }
+    }
     /*
     // MARK: - Navigation
 

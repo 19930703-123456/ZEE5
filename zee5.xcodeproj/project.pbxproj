@@ -86,7 +86,6 @@
 		751F581F282FC95300FBD04D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				75284B7D2831507D00D7DFC5 /* RegisterViewController.swift */,
 				75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */,
 				75284B74282FCFC700D7DFC5 /* TabViewController.swift */,
 				75284B6C282FCF2700D7DFC5 /* HomeViewController.swift */,
@@ -94,6 +93,7 @@
 				75284B70282FCF5100D7DFC5 /* UpcomingViewController.swift */,
 				75284B72282FCF6300D7DFC5 /* MoreViewController.swift */,
 				75284B7B283107F400D7DFC5 /* LoginViewController.swift */,
+				75284B7D2831507D00D7DFC5 /* RegisterViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
