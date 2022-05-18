@@ -21,6 +21,8 @@
 		75284B7A2830E77800D7DFC5 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B792830E77800D7DFC5 /* UnderlinedTextField.swift */; };
 		75284B7C283107F400D7DFC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B7B283107F400D7DFC5 /* LoginViewController.swift */; };
 		75284B7E2831507E00D7DFC5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B7D2831507D00D7DFC5 /* RegisterViewController.swift */; };
+		75C5878D283526CB00568A0F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C5878C283526CB00568A0F /* ViewModel.swift */; };
+		75C5878F283526D800568A0F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C5878E283526D800568A0F /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		75284B792830E77800D7DFC5 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		75284B7B283107F400D7DFC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		75284B7D2831507D00D7DFC5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		75C5878C283526CB00568A0F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		75C5878E283526D800568A0F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +90,9 @@
 		751F581F282FC95300FBD04D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				75284B6C282FCF2700D7DFC5 /* HomeViewController.swift */,
 				75284B76282FD0C300D7DFC5 /* DownloadViewController.swift */,
 				75284B74282FCFC700D7DFC5 /* TabViewController.swift */,
-				75284B6C282FCF2700D7DFC5 /* HomeViewController.swift */,
 				75284B6E282FCF4100D7DFC5 /* HipiViewController.swift */,
 				75284B70282FCF5100D7DFC5 /* UpcomingViewController.swift */,
 				75284B72282FCF6300D7DFC5 /* MoreViewController.swift */,
@@ -101,6 +105,7 @@
 		751F5820282FC96500FBD04D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				75C5878E283526D800568A0F /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 		751F5821282FC97200FBD04D /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				75C5878C283526CB00568A0F /* ViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -208,10 +214,12 @@
 				75284B71282FCF5100D7DFC5 /* UpcomingViewController.swift in Sources */,
 				75284B6F282FCF4100D7DFC5 /* HipiViewController.swift in Sources */,
 				75284B7A2830E77800D7DFC5 /* UnderlinedTextField.swift in Sources */,
+				75C5878F283526D800568A0F /* Model.swift in Sources */,
 				751F580C282FBC4900FBD04D /* AppDelegate.swift in Sources */,
 				751F580E282FBC4900FBD04D /* SceneDelegate.swift in Sources */,
 				75284B77282FD0C300D7DFC5 /* DownloadViewController.swift in Sources */,
 				75284B7C283107F400D7DFC5 /* LoginViewController.swift in Sources */,
+				75C5878D283526CB00568A0F /* ViewModel.swift in Sources */,
 				75284B6D282FCF2700D7DFC5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,7 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = /Users/sasidharreddy/Documents/GitHub/ZEE5/zee5/Resouces/Info.plist;
+				INFOPLIST_FILE = zee5/Resouces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -387,7 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = /Users/sasidharreddy/Documents/GitHub/ZEE5/zee5/Resouces/Info.plist;
+				INFOPLIST_FILE = zee5/Resouces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

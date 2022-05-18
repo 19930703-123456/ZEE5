@@ -150,7 +150,7 @@
         <!--Login/Rigester-->
         <scene sceneID="Kuf-gJ-GId">
             <objects>
-                <viewController storyboardIdentifier="MoreViewController" id="ZSL-0F-NHe" customClass="MoreViewController" customModule="zee5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoreViewController" hidesBottomBarWhenPushed="YES" id="ZSL-0F-NHe" customClass="MoreViewController" customModule="zee5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I4c-XL-f0X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,7 +276,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Yl-pH-GJF"/>
-                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.027450980392156862" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.72941176470000002" green="0.74117647060000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="knB-5j-K8f" firstAttribute="centerX" secondItem="5Yl-pH-GJF" secondAttribute="centerX" id="GbQ-Rr-ABP"/>
@@ -360,7 +360,6 @@
                         <viewLayoutGuide key="safeArea" id="Wx4-Cc-mNZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="baE-n4-nS5" firstAttribute="centerX" secondItem="Wx4-Cc-mNZ" secondAttribute="centerX" id="Fxt-dU-J33"/>
                             <constraint firstItem="xmh-9z-YVw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wx4-Cc-mNZ" secondAttribute="leading" symbolic="YES" id="MjU-Z3-9av"/>
                             <constraint firstItem="baE-n4-nS5" firstAttribute="leading" secondItem="Wx4-Cc-mNZ" secondAttribute="leading" constant="20" id="Pxg-bT-dnd"/>
                             <constraint firstItem="zGU-7e-2aV" firstAttribute="top" secondItem="Wx4-Cc-mNZ" secondAttribute="top" constant="100" id="Uef-4C-ZuR"/>
@@ -573,9 +572,6 @@
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <image name="ticket" catalog="system" width="128" height="84"/>
         <image name="twitter" width="24" height="24"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
