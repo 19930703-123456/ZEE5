@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -171,8 +172,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ID or Mobile Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sTG-gc-ciE" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
-                                <rect key="frame" x="20" y="103" width="374" height="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email ID or Mobile Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sTG-gc-ciE" customClass="UnderlinedTextField" customModule="zee5" customModuleProvider="target">
+                                <rect key="frame" x="20" y="147" width="374" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="tintColor"/>
                                 <constraints>
@@ -394,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouE-Hm-T5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1746" y="1630"/>
+            <point key="canvasLocation" x="973.91304347826099" y="1629.9107142857142"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="Kvu-Ab-eD8">
@@ -535,14 +536,77 @@
                     <view key="view" contentMode="scaleToFill" id="rdK-0s-Xds">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8y-L7-Cil">
+                                <rect key="frame" x="0.0" y="50" width="414" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwm-zc-udt">
+                                        <rect key="frame" x="10" y="11.5" width="60" height="57.5"/>
+                                        <color key="backgroundColor" red="0.24705882352941178" green="0.20392156862745098" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="ack-3h-zqu"/>
+                                            <constraint firstAttribute="height" constant="60" id="bT1-Gn-NAc"/>
+                                        </constraints>
+                                        <imageReference key="image" image="person" catalog="system" symbolScale="medium"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NU0-ns-Bjv">
+                                        <rect key="frame" x="75" y="8" width="309" height="64"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="Guest" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQa-GK-7wy">
+                                                <rect key="frame" x="0.0" y="0.0" width="309" height="32"/>
+                                                <color key="backgroundColor" red="0.066666666666666666" green="0.027450980392156862" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="21"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Login/Reqister for best experience" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ph8-By-jvi">
+                                                <rect key="frame" x="0.0" y="32" width="309" height="32"/>
+                                                <color key="backgroundColor" red="0.066666666669999999" green="0.027450980390000001" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.49019607843137253" green="0.45882352941176469" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ph8-By-jvi" firstAttribute="height" secondItem="JQa-GK-7wy" secondAttribute="height" id="aVl-Xb-prf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJ9-XZ-gtK">
+                                        <rect key="frame" x="394" y="32" width="20" height="16.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="nzR-UP-cKJ"/>
+                                            <constraint firstAttribute="height" constant="20" id="owa-kc-UFV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.066666666666666666" green="0.027450980392156862" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NU0-ns-Bjv" secondAttribute="trailing" constant="30" id="IOB-uO-Vw6"/>
+                                    <constraint firstItem="NU0-ns-Bjv" firstAttribute="top" secondItem="D8y-L7-Cil" secondAttribute="top" constant="8" id="Rlz-h6-uAW"/>
+                                    <constraint firstItem="zwm-zc-udt" firstAttribute="leading" secondItem="D8y-L7-Cil" secondAttribute="leading" constant="10" id="U0u-eO-uYN"/>
+                                    <constraint firstItem="NU0-ns-Bjv" firstAttribute="leading" secondItem="zwm-zc-udt" secondAttribute="trailing" constant="5" id="UCt-bK-Jwf"/>
+                                    <constraint firstAttribute="height" constant="80" id="akd-dK-rHB"/>
+                                    <constraint firstItem="NU0-ns-Bjv" firstAttribute="centerY" secondItem="zwm-zc-udt" secondAttribute="centerY" id="cbo-9d-rD5"/>
+                                    <constraint firstItem="zwm-zc-udt" firstAttribute="centerY" secondItem="D8y-L7-Cil" secondAttribute="centerY" id="fJ9-GY-IBg"/>
+                                    <constraint firstAttribute="trailing" secondItem="qJ9-XZ-gtK" secondAttribute="trailing" id="i8I-Qe-vfR"/>
+                                    <constraint firstItem="qJ9-XZ-gtK" firstAttribute="centerY" secondItem="D8y-L7-Cil" secondAttribute="centerY" id="x3H-ER-gaD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xhf-wR-dxm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="0.59215686274509804" green="0.52156862745098043" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xhf-wR-dxm" firstAttribute="trailing" secondItem="D8y-L7-Cil" secondAttribute="trailing" id="FyI-Vj-YUs"/>
+                            <constraint firstItem="D8y-L7-Cil" firstAttribute="top" secondItem="rdK-0s-Xds" secondAttribute="top" constant="50" id="LKp-Py-uik"/>
+                            <constraint firstItem="D8y-L7-Cil" firstAttribute="leading" secondItem="xhf-wR-dxm" secondAttribute="leading" id="wVU-j9-JZB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gnn-zO-zBn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9o5-aS-Ln0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241" y="980"/>
+            <point key="canvasLocation" x="240.57971014492756" y="979.6875"/>
         </scene>
         <!--Hipi View Controller-->
         <scene sceneID="i5F-vw-yxm">
@@ -582,9 +646,11 @@
         <image name="Apple" width="24" height="24"/>
         <image name="Facebook" width="24" height="24"/>
         <image name="bolt" catalog="system" width="101" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="google" width="24" height="24"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="lineweight" catalog="system" width="128" height="110"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <image name="ticket" catalog="system" width="128" height="84"/>
         <image name="twitter" width="24" height="24"/>
