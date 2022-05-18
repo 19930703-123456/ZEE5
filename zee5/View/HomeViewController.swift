@@ -11,8 +11,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-goToNextScreen()
-        // Do any additional setup after loading the view.
+       // Do any additional setup after loading the view.
     }
     
     
@@ -21,7 +20,7 @@ goToNextScreen()
 //        guard let vc = storyboard?.instantiateViewController(withIdentifier: "MoreViewController") as? MoreViewController else {
 //            return
 //        }
-        goToNextScreen()
+//        goToNextScreen()
        
     }
     func goToNextScreen() {
