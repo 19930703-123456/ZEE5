@@ -9,8 +9,13 @@ import UIKit
 
 class DownloadViewController: UIViewController {
 
+    @IBOutlet weak var profileImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        profileImageView.layer.masksToBounds = true
+           profileImageView.layer.cornerRadius = profileImageView.bounds.width / 2
 
         // Do any additional setup after loading the view.
     }
