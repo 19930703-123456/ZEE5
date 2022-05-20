@@ -23,6 +23,7 @@
 		75284B7E2831507E00D7DFC5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B7D2831507D00D7DFC5 /* RegisterViewController.swift */; };
 		75C5878D283526CB00568A0F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C5878C283526CB00568A0F /* ViewModel.swift */; };
 		75C5878F283526D800568A0F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C5878E283526D800568A0F /* Model.swift */; };
+		B224C9C828366DBF00D6EC06 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B224C9C728366DBF00D6EC06 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		75284B7D2831507D00D7DFC5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		75C5878C283526CB00568A0F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		75C5878E283526D800568A0F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B224C9C728366DBF00D6EC06 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				751F580B282FBC4900FBD04D /* AppDelegate.swift */,
 				751F580D282FBC4900FBD04D /* SceneDelegate.swift */,
+				B224C9C728366DBF00D6EC06 /* Constants.swift */,
 				75284B782830E72E00D7DFC5 /* Extension */,
 				751F5822282FC9A800FBD04D /* Resouces */,
 				751F5821282FC97200FBD04D /* View Model */,
@@ -219,6 +222,7 @@
 				751F580E282FBC4900FBD04D /* SceneDelegate.swift in Sources */,
 				75284B77282FD0C300D7DFC5 /* DownloadViewController.swift in Sources */,
 				75284B7C283107F400D7DFC5 /* LoginViewController.swift in Sources */,
+				B224C9C828366DBF00D6EC06 /* Constants.swift in Sources */,
 				75C5878D283526CB00568A0F /* ViewModel.swift in Sources */,
 				75284B6D282FCF2700D7DFC5 /* HomeViewController.swift in Sources */,
 			);

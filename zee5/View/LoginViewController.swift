@@ -31,6 +31,12 @@ class LoginViewController: UIViewController {
         imageicon.addGestureRecognizer(tap)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+
+    }
+    
     @objc func imageTap(tap:UITapGestureRecognizer) {
         let tappedImage = tap.view as! UIImageView
         if iconClicked
